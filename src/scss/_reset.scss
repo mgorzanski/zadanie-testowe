@@ -1,5 +1,10 @@
 @import '~modern-normalize/modern-normalize.css';
 
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /**
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
@@ -214,4 +219,8 @@ video {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
 }
