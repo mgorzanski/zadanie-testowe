@@ -5,7 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `ailleron`,
+    description: ``,
+    siteUrl: `http://localhost:8000`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
