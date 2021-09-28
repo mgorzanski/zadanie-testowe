@@ -1,0 +1,70 @@
+.cookies {
+  position: fixed;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 10;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $mq-breakpoint-desktop) {
+    bottom: 69px;
+  }
+}
+
+.cookies__inner {
+  background: #242424;
+  border-radius: 15px;
+  max-width: 1545px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+
+  @media (min-width: $mq-breakpoint-tablet) {
+    flex-direction: row;
+    padding: 28px 57px 28px 19px;
+  }
+}
+
+.cookies__text {
+    font-size: 0.75rem; // 12px
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+
+    @media (min-width: $mq-breakpoint-tablet) {
+      font-size: 0.875rem; // 14px
+    }
+
+    @media (min-width: $mq-breakpoint-desktop) {
+      font-size: 1rem;
+    }
+}
+
+.cookies__accept-btn {
+  display: block;
+  background: #C92121;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.25rem; // 20px
+  text-align: center;
+  padding: 10px 30px;
+  color: #FFFFFF;
+  margin: 10px 0 0;
+
+  @media (min-width: $mq-breakpoint-tablet) {
+    padding: 16px 35px;
+    margin: 0 0 0 20px;
+  }
+
+  @media (min-width: $mq-breakpoint-desktop) {
+    padding: 18px 57px;
+    font-size: 1.25rem; // 20px
+    line-height: 1.5rem; // 24px
+    margin: 0 0 0 30px;
+  }
+}

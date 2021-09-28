@@ -4,7 +4,9 @@
   align-items: center;
   background-color: #262A2E;
   padding: 16px 18px 11px;
-  position: relative;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 
   @media (min-width: $mq-breakpoint-tablet) {
     align-items: flex-start;

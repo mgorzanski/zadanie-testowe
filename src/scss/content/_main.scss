@@ -1,0 +1,13 @@
+.main {
+  &.main--header-fixed {
+    padding: 63px 0 0;
+
+    @media (min-width: $mq-breakpoint-tablet) {
+      padding: 74px 0 0;
+    }
+
+    @media (min-width: $mq-breakpoint-desktop) {
+      padding: 100px 0 0;
+    }
+  }
+}

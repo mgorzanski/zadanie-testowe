@@ -3,12 +3,9 @@ import { TabPanel } from 'react-tabs';
 import {
   BarChart,
   Bar,
-  Brush,
-  ReferenceLine,
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip,
   Legend,
   ResponsiveContainer,
 } from 'recharts';
