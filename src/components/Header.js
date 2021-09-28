@@ -55,13 +55,13 @@ class Header extends React.Component {
           >
             <ul className="header__menu-list">
               <li className="header__menu-list-item">
-                <a href="#">Sekcja_1</a>
+                <a href="#hero">Sekcja_1</a>
               </li>
               <li className="header__menu-list-item">
-                <a href="#">Sekcja_2</a>
+                <a href="#wyniki-firmy">Sekcja_2</a>
               </li>
               <li className="header__menu-list-item">
-                <a href="#">Sekcja_3</a>
+                <a href="#kontakt">Sekcja_3</a>
               </li>
             </ul>
           </nav>

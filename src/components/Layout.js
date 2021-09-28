@@ -13,7 +13,7 @@ class Layout extends React.Component {
     return (
       <>
         <Header />
-        <main id="page-content" className="main">
+        <main id="page-content" className="main main--header-fixed">
           {this.props.children}
         </main>
         <Cookies />
