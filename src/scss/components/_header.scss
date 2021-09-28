@@ -39,6 +39,7 @@
   background-color: #262A2E;
   transition: height 0.5s;
   overflow: hidden;
+  z-index: 100;
 
   @media (min-width: 900px) {
     height: auto !important;
