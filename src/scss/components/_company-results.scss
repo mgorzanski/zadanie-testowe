@@ -310,3 +310,55 @@
   line-height: 1.0625rem; // 17px
   color: #000;
 }
+
+.company-results-chart {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+
+.company-results-chart__legend {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.company-results-chart__legend-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  @media (min-width: 600px) {
+    margin: 0 31px 0 0;
+  }
+}
+
+.company-results-chart__legend-item-color {
+  display: block;
+  width: 30px;
+  height: 15px;
+  border-radius: 5px;
+  margin: 0 5px 0 0;
+  flex: 0 0 30px;
+
+  @media (min-width: 600px) {
+    width: 64px;
+    height: 40px;
+    margin: 0 19px 0 0;
+    flex: 0 0 64px;
+  }
+}
+
+.company-results-chart__legend-item-name {
+  flex: 1;
+  font-weight: 600;
+  font-size: 0.625rem; // 10px
+  line-height: 0.8125rem; // 13px
+  color: #000;
+
+  @media (min-width: 600px) {
+    font-size: 0.75rem; // 12px
+    line-height: 0.9375rem; // 15px
+  }
+}

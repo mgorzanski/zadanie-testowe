@@ -3,6 +3,7 @@ import { Tabs, TabList, Tab } from 'react-tabs';
 
 import Reports from './Reports';
 import Table from './Table';
+import Chart from './Chart';
 
 const TabIcon = () => (
   <svg className="company-results-tabs__tab-icon" role="presentation" width={67} height={67} viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,6 +41,7 @@ class CompanyResults extends React.Component {
 
           <Reports />
           <Table />
+          <Chart />
         </Tabs>
       </section>
     );
