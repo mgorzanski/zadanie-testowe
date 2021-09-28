@@ -1,0 +1,155 @@
+.hero {
+  position: relative;
+}
+
+.hero__slide {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 64px 0 76px;
+  position: relative;
+
+  @media (min-width: $mq-breakpoint-tablet) {
+    padding: 120px 0 160px;
+  }
+
+  @media (min-width: $mq-breakpoint-desktop) {
+    padding: 213px 0 282px;
+  }
+}
+
+.hero__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  max-width: 758px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+
+  @media (min-width: $mq-breakpoint-tablet) {
+    padding: 0;
+  }
+}
+
+.hero__heading {
+  font-weight: 600;
+  font-size: 1.875rem; // 30px
+  line-height: 2.25rem; // 36px
+  text-align: center;
+  color: #fff;
+  max-width: 758px;
+  width: 100%;
+  height: 177px;
+
+  @media (min-width: 500px) {
+    font-size: 2.375rem; // 38px
+    line-height: 2.875rem; // 46px
+  }
+
+  @media (min-width: $mq-breakpoint-tablet) {
+    font-size: 2.75rem; // 44px
+    line-height: 3.125rem; // 50px
+  }
+
+  @media (min-width: $mq-breakpoint-desktop) {
+    font-size: 3rem; // 48px
+    line-height: 3.6875rem; // 59px
+  }
+}
+
+.hero__button {
+  display: inline-block;
+  border-radius: 8px;
+  border: 3px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem; // 20px
+  padding: 16px 34px;
+  transition: all $transition-duration-default;
+
+  @media (min-width: 500px) {
+    font-size: 1.125rem; // 18px
+    line-height: 1.375rem; // 22px
+  }
+
+  @media (min-width: $mq-breakpoint-tablet) {
+    padding: 18px 44px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 3px solid #E73E2A;
+    color: #E73E2A;
+  }
+}
+
+.hero__slider-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translateX(-50%);
+  z-index: 4;
+  max-width: 109px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: $mq-breakpoint-desktop) {
+    bottom: 70px;
+  }
+}
+
+.hero__slider-pagination-item {
+  display: block;
+  background-color: #E8E8E8;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all $transition-duration-default;
+
+  @media (min-width: $mq-breakpoint-desktop) {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #BB271A;
+  }
+
+  &.hero__slider-pagination-item--active {
+    background-color: #BB271A;
+    width: 20px;
+    height: 20px;
+
+    @media (min-width: $mq-breakpoint-desktop) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
