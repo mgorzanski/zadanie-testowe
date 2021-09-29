@@ -162,7 +162,7 @@
 
 .company-results-reports {
   display: grid;
-  grid-template-columns: 333px;
+  grid-template-columns: 1fr;
   justify-items: center;
   justify-content: center;
   gap: 25px;
@@ -185,7 +185,12 @@
 
 .company-results-reports__item {
   display: block;
-  margin: 0 0 0 36px;
+  max-width: 333px;
+  margin: 0 auto;
+  
+  @media (min-width: 900px) {
+    margin: 0 0 0 36px;
+  }
 }
 
 .company-results-reports__item-link {
